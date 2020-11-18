@@ -18,12 +18,12 @@
     <%= @restaurant.category %>
   </p>
 
-  <p>
-  <ul>
+  <p><strong>Reviews:</strong></p>
+  <ol>
     <% @restaurant.reviews.each do |review| %>
       <li><%= review.content %></li>
     <% end %>
-  </ul>
+  </ol>
 </p>
   <%= link_to 'Add Review', new_restaurant_review_path(@restaurant), class: 'btn btn-primary' %>
   <%= link_to 'Back', restaurants_path, class: 'btn btn-primary' %>
