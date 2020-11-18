@@ -1,3 +1,6 @@
-<%= render 'form', restaurant: @restaurant %>
+<div class="container-xl">
+  <h2 class="p-3">New Restaurant</h2>
+  <%= render 'form', restaurant: @restaurant %>
 
-<%= link_to "Back to the list", restaurants_path %>
+  <%= link_to "Back to the list", restaurants_path, class: 'btn btn-primary w-100' %>
+</div>
